@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="rafal.css" />
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=geometry"></script>
+		<script src="path.js"></script>
+	</head>
+	<body>
+		<div class="controls">
+			<select id="s_from">
+				<option value="paris">Paris</option>
+			</select> 
+			<select id="s_to">
+				<option value="ambala">Ambala</option>
+			</select>
+
+			<button onclick="go();" style="background-color: #fff; border-radius: 1px solid #dcdcdc;">Launch Rafale</button>
+		</div>
+
+		<div id="mapCanvas" class="map"></div>
+		<script type="text/javascript">loadMap();</script>
+	</body>
+</html>
